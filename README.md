@@ -60,3 +60,5 @@ RACK fast output: source=...
 ```
 
 The source values are `rc_resend`, `collapsed`, and `tcp_rack_output`. These logs show whether an RSM was selected, suppressed, or transmitted, and expose any path that bypasses the gate.
+
+[test.pkt](https://github.com/NikhilKottoli/PRR_WritUp/blob/main/test.pkt) was the packetdrill test used
