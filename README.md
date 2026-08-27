@@ -45,8 +45,8 @@ The gate uses `skip_all_send` rather than clearing `rsm`. Clearing only `rsm` co
 
 ## Exclusions
 
-* Timer resend is selected at [rack.c](https://github.com/freebsd/freebsd-src/blob/d1057074b277443e11b04e8513acdf43fd133123/sys/netinet/tcp_stacks/rack.c#L20015).
-* TLP selection follows the collapsed-recovery branch at approximately [rack.c](https://github.com/freebsd/freebsd-src/blob/d1057074b277443e11b04e8513acdf43fd133123/sys/netinet/tcp_stacks/rack.c#L20077).
+* Timer resend is selected at [rack.c](https://github.com/freebsd/freebsd-src/blob/d1057074b277443e11b04e8513acdf43fd133123/sys/netinet/tcp_stacks/rack.c#L19965).
+* TLP selection follows the collapsed-recovery branch at approximately [rack.c](https://github.com/freebsd/freebsd-src/blob/d1057074b277443e11b04e8513acdf43fd133123/sys/netinet/tcp_stacks/rack.c#L20031).
 * The gate is currently marked only for the direct `tcp_rack_output()` source. `rc_resend` has multiple producers, including timer and recovery paths, so it cannot be classified solely by its field name.
 
 ## Diagnostics
