@@ -25,7 +25,7 @@ If the budget is insufficient, the retransmission must not be sent and control f
 
 Timer retransmissions and TLP probes are separate mechanisms and must not be blocked by this gate.
 
-## Current Change
+## Proposed Change
 
 `rack_output()` now tracks whether the selected RSM came from the ordinary `tcp_rack_output()` branch with `ordinary_rack_rxt`, declared near [rack.c](https://github.com/freebsd/freebsd-src/blob/d1057074b277443e11b04e8513acdf43fd133123/sys/netinet/tcp_stacks/rack.c#L19639) and set near [rack.c](https://github.com/freebsd/freebsd-src/blob/d1057074b277443e11b04e8513acdf43fd133123/sys/netinet/tcp_stacks/rack.c#L19588).
 
